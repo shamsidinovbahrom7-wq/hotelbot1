@@ -8,23 +8,19 @@
     <artifactId>HotelBot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <java.version>17</java.version>
     </properties>
 
     <dependencies>
-        <!-- Telegram Bot Starter -->
         <dependency>
             <groupId>org.telegram</groupId>
             <artifactId>telegrambots</artifactId>
             <version>6.9.7.1</version>
         </dependency>
 
-        <!-- Log xatolarini oldini olish uchun (ixtiyoriy lekin tavsiya etiladi) -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -34,7 +30,6 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin versiyasini majburiy belgilash -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -45,7 +40,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Jar fayl yig'ish uchun (dependency'lar bilan birga) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -56,7 +50,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Bahrom.MainMain</mainClass> <!-- O'zingizni Main class yo'lingizni yozing -->
+                            <mainClass>Bahrom.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
