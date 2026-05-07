@@ -56,7 +56,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.Main</mainClass> <!-- O'zingizni Main class yo'lingizni yozing -->
+                            <mainClass>Bahrom.MainMain</mainClass> <!-- O'zingizni Main class yo'lingizni yozing -->
                         </manifest>
                     </archive>
                 </configuration>
